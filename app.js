@@ -36,8 +36,10 @@ console.log("Let's get this party started!");
    * returns the url as a string.
    */
   function getURL(){
-    let searchTerm = $('searchInput').val();
-    let url = `http://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym`
+    let searchTerm = $('#searchInput').val();
+    let url = `http://api.giphy.com/v1/gifs/search?q=${searchTerm}` +
+      `&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym`
+
     return url;
   }
 
