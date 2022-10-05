@@ -3,18 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <title>Giphy Party!</title>
+    <style>
+
+
+      body div {
+        margin: 0px;
+        padding: 0px;
+
+      }
+    #inputForm{
+      display: inline;
+    }
+
+    .gifGallery {
+    }
+
+    .gif {
+      height: 150px;
+      padding: .25em;
+    }
+
+    header {
+      margin: 1em;
+      display: flex;
+      justify-content: center;
+    }
+
+
+    </style>
   </head>
 
   <body>
-    <div>
+    <header>
       <form id="inputForm">
-        <label for="searchInput"></label>
-        <input type="text" id="searchInput" />
+        <label for="searchInput">GIF Search: </label>
+        <input type="text" id="searchInput" placeholder="i.e. pasta cat"/>
         <button type="submit" id="searchButton">Search</button>
       </form>
       <button id="removeGifs">Remove GIFs</button>
+    </header>
       <div class="gifGallery"></div>
-    </div>
 
     <script src="https://unpkg.com/jquery"></script>
     <script src="https://unpkg.com/axios/dist/axios.js"></script>
